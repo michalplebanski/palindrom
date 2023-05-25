@@ -1,7 +1,11 @@
 reverse_name = ""
 
 def check_palindrom(name):
-    print(name)
+  reverse_name = name [::-1]
+  if (name == reverse_name):
+    return True
+  else:
+    return False
 
-palindrom = check_palindrom("test")
-print(palindrom)
+status = check_palindrom("łapał")
+print(status)
