@@ -1,7 +1,7 @@
 def check_palindrom(name):
-  name = name.replace(" ", "")
-  reverse_name = name.isalnum()
-  return reverse_name
-
+  if name.isalnum():
+    name = name.lower().replace(" ", "")
+    return name == name[::-1]  
+  
 status = check_palindrom("łapał")
 print(status)
